@@ -1,0 +1,142 @@
+/** DATE PICKER */
+#date-picker {
+    position: fixed;
+    left: 30px;
+    bottom: -900px;
+    z-index: 2000;
+    max-width: 90%;
+    max-height: 85%;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px #000000;
+    border-radius: 6px;
+}
+
+/* DAY OF WEEK */
+#date-picker-dow {
+    padding: 5px;
+    text-align: center;
+    opacity: 1.0;
+}
+#date-picker-dow p {
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    font-size: 100%;
+}
+
+/* MONTH */
+#date-picker-month {
+    padding: 2px;
+    text-align: center;
+    opacity: 0.8;
+}
+#date-picker-month p {
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    font-size: 125%;
+    text-transform: uppercase;
+}
+
+/* DAY OF MONTH */
+#date-picker-day {
+    padding: 2px;
+    text-align: center;
+    opacity: 0.8;
+}
+#date-picker-day p {
+    color: rgba(255, 255, 255, 1.0);
+    margin: 0;
+    font-size: 300%;
+}
+
+/* YEAR */
+#date-picker-year {
+    padding: 2px;
+    text-align: center;
+    opacity: 0.8;
+}
+#date-picker-year p {
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    font-size: 125%;
+}
+
+/* MONTH SELECTOR */
+#date-picker-cal-month {
+    width: 100%;
+    text-align: center;
+    margin-top: 5px
+}
+#date-picker-cal-month-label {
+    opacity: 0.85;
+    font-weight: bold;
+    display: inline;
+    padding-top: 25px
+}
+#date-picker-cal-month-prev {
+    font-size: 150%;
+    display: inline;
+    float: left;
+    cursor: pointer;
+    opacity: 0.7;
+    margin-top: -5px;
+    margin-left: 10px;
+}
+#date-picker-cal-month-next {
+    font-size: 150%;
+    display: inline;
+    float: right;
+    cursor: pointer;
+    opacity: 0.7;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+#date-picker-cal-month-prev:hover, #date-picker-cal-month-next:hover {
+    opacity: 1.0;
+}
+
+/* CALENDAR TABLE */
+#date-picker-cal-wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#date-picker-cal {
+    margin-bottom: 0;
+}
+#date-picker-cal thead {
+    text-align: center;
+    font-weight: bold;
+}
+#date-picker-cal tbody {
+    text-align: center;
+}
+#date-picker-cal td {
+    font-size: 0.75em;
+    height: 42px;
+    width: 42px;
+}
+#date-picker-cal td.selected {
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+}
+#date-picker-cal td.enabled-date {
+    cursor: pointer;
+}
+
+/* BUTTONS */
+#date-picker-buttons {
+    margin: 5px;
+}
+#date-picker-reset-button {
+    font-size: 125%;
+    width: 20%;
+    position: absolute;
+    left: 5px;
+    padding: 0;
+}
+#date-picker-cancel-button {
+    width: 30%;
+}
+#date-picker-ok-button {
+    width: 30%;
+}
