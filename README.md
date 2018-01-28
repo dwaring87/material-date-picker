@@ -1,2 +1,2 @@
-# material-date-picker
-JavaScript Material Design Date Picker
+# Material Design Date Picker
+
