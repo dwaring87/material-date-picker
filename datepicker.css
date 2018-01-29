@@ -27,7 +27,7 @@
 #date-picker-month {
     padding: 2px;
     text-align: center;
-    opacity: 0.8;
+    opacity: 0.85;
 }
 #date-picker-month p {
     color: rgba(255, 255, 255, 0.7);
@@ -40,7 +40,7 @@
 #date-picker-day {
     padding: 2px;
     text-align: center;
-    opacity: 0.8;
+    opacity: 0.85;
 }
 #date-picker-day p {
     color: rgba(255, 255, 255, 1.0);
@@ -52,7 +52,7 @@
 #date-picker-year {
     padding: 2px;
     text-align: center;
-    opacity: 0.8;
+    opacity: 0.85;
 }
 #date-picker-year p {
     color: rgba(255, 255, 255, 0.7);
@@ -64,13 +64,12 @@
 #date-picker-cal-month {
     width: 100%;
     text-align: center;
-    margin-top: 5px
+    margin-top: 8px
 }
 #date-picker-cal-month-label {
     opacity: 0.85;
     font-weight: bold;
     display: inline;
-    padding-top: 25px
 }
 #date-picker-cal-month-prev {
     font-size: 150%;
@@ -98,6 +97,7 @@
 #date-picker-cal-wrapper {
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 10px;
 }
 #date-picker-cal {
     margin-bottom: 0;
@@ -110,13 +110,15 @@
     text-align: center;
 }
 #date-picker-cal td {
-    font-size: 0.75em;
-    height: 42px;
-    width: 42px;
+    font-size: 12px;
+    height: 36px;
+    width: 36px;
+    vertical-align: middle;
+    padding: 0;
 }
 #date-picker-cal td.selected {
-    height: 42px;
-    width: 42px;
+    height: 36px;
+    width: 36px;
     border-radius: 50%;
 }
 #date-picker-cal td.enabled-date {
