@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>DatePicker Example</title>
+
+    <!-- Material Bootstrap CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.0.0-beta.4/dist/css/bootstrap-material-design.min.css" integrity="sha384-R80DC0KVBO4GSTw+wZ5x2zn2pu4POSErBkf8/fSFhPXHxvHJydT0CSgAP2Yo2r4I" crossorigin="anonymous">
+
+    <!-- Date Picker CSS -->
+    <link rel="stylesheet" href="./datepicker.css">
+</head>
+<body style="margin: 25px;">
+
+    <button id="date-button" type="button" class="btn btn-raised btn-primary">Select Date</button>
+    <br /><br />
+    <p>The Selected Date Is: <strong><span id="date"></span></strong></p>
+
+    <!-- DATE PICKER HTML -->
+    <div id="date-picker">
+        <div>
+            <div id="date-picker-header">
+                <div id="date-picker-dow"></div>
+                <div id="date-picker-month"></div>
+                <div id="date-picker-day"></div>
+                <div id="date-picker-year"></div>
+            </div>
+            <div id="date-picker-cal-month">
+                <span id="date-picker-cal-month-prev"><i class="icon ion-chevron-left"></i>&nbsp;&nbsp;&nbsp;</span>
+                <p id="date-picker-cal-month-label"></p>
+                <span id="date-picker-cal-month-next">&nbsp;&nbsp;&nbsp;<i class="icon ion-chevron-right"></i></span>
+            </div>
+            <div id="date-picker-cal-wrapper">
+                <table id="date-picker-cal" class="table borderless">
+                    <thead>
+                        <tr>
+                            <td>S</td><td>M</td><td>T</td><td>W</td><td>T</td><td>F</td><td>S</td>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div id="date-picker-buttons" class="text-right">
+                <a id="date-picker-reset-button" class="btn btn-sm btn-flat"><i class="icon ion-android-calendar"></i></a>
+                <a id="date-picker-cancel-button" class="btn btn-sm btn-flat">Cancel</a>
+                <a id="date-picker-ok-button" class="btn btn-sm btn-flat">OK</a>
+            </div>
+        </div>
+    </div>
+    <!-- DATE PICKER -->
+
+    <!-- JQuery, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.0.0-beta.4/dist/js/bootstrap-material-design.js" integrity="sha384-3xciOSDAlaXneEmyOo0ME/2grfpqzhhTcM4cE32Ce9+8DW/04AGoTACzQpphYGYe" crossorigin="anonymous"></script>
+    <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+
+    <!-- DatePicker JS -->
+    <script type="text/javascript" src="./datepicker.js"></script>
+    <script type="text/javascript">
+
+        // Initialize the DatePicker
+        var dp = DatePicker("#0D47A1");
+
+        // Set Button Click Listener
+        $("#date-button").click(function() {
+            var date = new Date();
+            dp.show(date, function(selected) {
+                $("#date").html(selected.toLocaleDateString());
+            });
+        });
+
+    </script>
+</body>
+</html>
