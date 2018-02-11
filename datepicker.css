@@ -115,11 +115,16 @@
     width: 36px;
     vertical-align: middle;
     padding: 0;
+    border-top: 0;
 }
 #date-picker-cal td.selected {
     height: 36px;
     width: 36px;
     border-radius: 50%;
+    opacity: 0.7;
+}
+#date-picker-cal td.selected:hover {
+    opacity: 1.0;
 }
 #date-picker-cal td.enabled-date {
     cursor: pointer;
